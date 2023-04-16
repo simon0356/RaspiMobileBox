@@ -104,5 +104,5 @@ Connect an Android phone and share internet access on USB and internet will be r
 
 
 ## Sources : 
-https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/
-https://insberr.github.io/pi-internet-bridge/
+https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/  
+https://insberr.github.io/pi-internet-bridge/  
