@@ -1,6 +1,6 @@
 # RaspiMobileBox
 Raspberry Pi Wifi/ethernet access point over usb tehering
-
+```
                  +- Android -----+     +----- RPi ----------------+
                  | USB Therering |     |                          +
 (Internet)---WAN-+ DHCP server   +-USB-+               / WLAN AP  +-)))  (((-+ WLAN Client (DHCP Client)
@@ -13,7 +13,7 @@ Raspberry Pi Wifi/ethernet access point over usb tehering
                                                                               |                    5 |
                                                                               |                    n |
                                                                               +----------------------+
-
+```
 ## Install dependencies 
 
 sudo apt-get update
