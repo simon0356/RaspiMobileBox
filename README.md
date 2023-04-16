@@ -1,8 +1,8 @@
 # RaspiMobileBox
 Raspberry Pi Wifi/ethernet access point over usb tethering
 
-This how-to aim to setup an internet gateway exposed both on ethernet and wifi interface of a raspberry pi (used here with model 3) 
-The internet access is provided by an android phone over USB tethering
+This how-to aim to setup an internet gateway exposed both on ethernet and wifi interface of a raspberry pi (used here with model 3)  
+The internet access is provided by an android phone over USB tethering  
 
 ```
                  +- Android -----+     +----- RPi ----------------+
@@ -59,8 +59,8 @@ nano /etc/default/hostapd
 DAEMON_CONF="/etc/hostapd/hostapd.conf"
 ```
 
-mv /etc/dnsmasq.conf /etc/dnsmasq.conf.orig
-nano /etc/dnsmasq.conf
+mv /etc/dnsmasq.conf /etc/dnsmasq.conf.orig  
+nano /etc/dnsmasq.conf  
 ```
 interface=br0
     dhcp-range=192.168.6.5,192.168.6.30,255.255.255.0,24h
@@ -89,17 +89,17 @@ bridge_ports eth0 wlan0
 ```
 Enable services : 
 
-systemctl unmask hostapd
-systemctl enable hostapd
-systemctl start hostapd
-systemctl enable dnsmasq
+systemctl unmask hostapd  
+systemctl enable hostapd  
+systemctl start hostapd  
+systemctl enable dnsmasq  
 
 
-Reboot your raspberry pi.
-You will be able to get an IPv4 adress on the wifi AP or ethernet link.
-You will get an IPv4 on network 192.168.6.0/24
-If none Android phone sharing internet access on usb you will have no access to internet.
-Connect an Android phone and share internet access on USB and internet will be reachable.
+Reboot your raspberry pi.  
+You will be able to get an IPv4 adress on the wifi AP or ethernet link.  
+You will get an IPv4 on network 192.168.6.0/24.  
+If none Android phone sharing internet access on usb you will have no access to internet.  
+Connect an Android phone and share internet access on USB and internet will be reachable.  
 
 
 
